@@ -1,0 +1,17 @@
+import React from "react";
+function Card(props) {
+  return (
+    <dl className="dictionary">
+      <div className="tern">
+        <dt>
+          <span className="emoji" role="img" aria-label={props.name}>
+            {props.emoji}
+          </span>
+          <span>{props.name}</span>
+        </dt>
+        <dd>{props.meaning}</dd>
+      </div>
+    </dl>
+  );
+}
+export default Card;
